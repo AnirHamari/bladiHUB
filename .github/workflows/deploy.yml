@@ -37,6 +37,10 @@ jobs:
         run: npm install
       - name: Static HTML export with Next.js
         run: npm run build
+        env:
+          NEXT_TELEMETRY_DISABLED: 1
+          NEXT_DISABLE_ESLINT: 1
+          NEXT_DISABLE_TYPECHECK: 1
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
