@@ -1,26 +1,103 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+    /* Official Moroccan Colors - Refined for Light Mode */
+    --color-moroccan-red: #C1272D;
+    --color-moroccan-red-light: #E03D43;
+    --color-moroccan-green: #006233;
+    --color-moroccan-green-light: #008144;
+    --color-moroccan-gold: #C5A059;
+    /* More of a bronze/metallic gold */
+
+    /* Authentic Light Palette */
+    --color-sand-beige: #FDF9F3;
+    /* Soft sand background */
+    --color-shell-white: #FFFFFF;
+    --color-deep-teal: #00332B;
+
+    /* Fonts */
+    --font-sans: var(--font-inter), ui-sans-serif, system-ui;
+    --font-heading: var(--font-poppins), ui-sans-serif, system-ui;
+
+    /* Premium Shadows */
+    --shadow-soft: 0 2px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+    --shadow-pinterest: 0 1px 20px 0 rgba(0, 0, 0, 0.05);
+    --shadow-pinterest-hover: 0 10px 40px -10px rgba(193, 39, 45, 0.1);
+
+    /* Custom Animations */
+    --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    --animate-fade-in: fadeIn 0.6s ease-out forwards;
+    --animate-slide-up: slideUp 0.6s ease-out forwards;
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideUp {
+        from {
+            transform: translateY(30px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@layer base {
+    body {
+        @apply bg-sand-beige text-zinc-900 antialiased selection:bg-moroccan-red selection:text-white;
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@layer utilities {
+    .zellige-pattern {
+        background-color: #FDF9F3;
+        background-image: radial-gradient(circle at center, #C5A059 0.5px, transparent 0.5px);
+        background-size: 24px 24px;
+        opacity: 0.2;
+    }
+
+    .glass-card {
+        @apply bg-white/80 backdrop-blur-md border border-white/40 shadow-soft;
+    }
+
+    .btn-primary {
+        @apply bg-moroccan-red text-white px-8 py-4 rounded-full font-bold shadow-pinterest hover:shadow-pinterest-hover hover:-translate-y-1 transition-all duration-300;
+    }
+
+    .btn-secondary {
+        @apply bg-white border-2 border-moroccan-green text-moroccan-green px-8 py-4 rounded-full font-bold hover:bg-moroccan-green hover:text-white transition-all duration-300 shadow-soft;
+    }
+
+    .text-gradient-moroccan {
+        background: linear-gradient(135deg, #C1272D 0%, #006233 100%);
+        @apply bg-clip-text text-transparent;
+    }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Scrollbar Style */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #FDF9F3;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #C1272D;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #006233;
 }

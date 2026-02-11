@@ -1,0 +1,89 @@
+{
+    "lastUpdated": "2026-02-10T15:00:00Z",
+    "articles": [
+        {
+            "id": "1",
+            "title": "Nouveaux services consulaires en ligne pour les MRE",
+            "summary": "Le ministère des Affaires étrangères annonce une digitalisation complète de 15 services pour faciliter les démarches administratifs à distance.",
+            "category": "Administration",
+            "date": "2026-02-10",
+            "image": "https://images.unsplash.com/photo-1541829019-2188201b83a0?auto=format&fit=crop&q=80&w=800",
+            "source": "MAP News",
+            "tags": [
+                "Digital",
+                "Consulat",
+                "Services"
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Le design marocain s'invite à la Milan Design Week",
+            "summary": "Trois collectifs d'artisans marocains de la diaspora présentent une fusion entre Zellige traditionnel et mobilier scandinave.",
+            "category": "Culture",
+            "date": "2026-02-09",
+            "image": "https://images.unsplash.com/photo-1531971589569-0d93700adb1a?auto=format&fit=crop&q=80&w=800",
+            "source": "Bladi Hub AI",
+            "tags": [
+                "Artisanat",
+                "Design",
+                "Exposition"
+            ]
+        },
+        {
+            "id": "3",
+            "title": "Top 5 des villes européennes pour l'entrepreneuriat MRE",
+            "summary": "Une étude de Bladi Hub révèle que Paris, Bruxelles et Madrid offrent les meilleurs réseaux de networking pour les entrepreneurs marocains.",
+            "category": "Business",
+            "date": "2026-02-08",
+            "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800",
+            "source": "Networking Insight",
+            "tags": [
+                "Entrepreneur",
+                "Europe",
+                "TopVilles"
+            ]
+        },
+        {
+            "id": "4",
+            "title": "Recette : Le Tajine modernisé de Salma",
+            "summary": "Découvrez comment Salma, notre IA, réinterprète le tajine traditionnel avec des ingrédients sourcés localement en Europe.",
+            "category": "Lifestyle",
+            "date": "2026-02-07",
+            "image": "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&q=80&w=800",
+            "source": "Community Kitchen",
+            "tags": [
+                "Gastronomie",
+                "Salma",
+                "MRE Life"
+            ]
+        },
+        {
+            "id": "5",
+            "title": "Forum Etudiants MRE Lyon 2026",
+            "summary": "Plus de 500 étudiants se sont réunis hier pour discuter des opportunités de stages entre le Maroc et la France.",
+            "category": "Education",
+            "date": "2026-02-10",
+            "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800",
+            "source": "Hespress",
+            "tags": [
+                "Études",
+                "Lyon",
+                "Forum"
+            ]
+        },
+        {
+            "id": "6",
+            "title": "Start-up : Un réseau de coworking MRE à Amsterdam",
+            "summary": "Youssef a aidé une jeune start-up marocaine à trouver ses bureaux à Amsterdam via notre réseau de networking.",
+            "category": "Business",
+            "date": "2026-02-09",
+            "image": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=800",
+            "source": "Youssef Insights",
+            "tags": [
+                "Coworking",
+                "Amsterdam",
+                "Success"
+            ]
+        }
+    ]
+}
